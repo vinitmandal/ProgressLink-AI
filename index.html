@@ -1,0 +1,1150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <script src="/_sdk/6542d56fbfe7a3eb.telemetry_sdk.js"
+    integrity="sha512-ECdM0nK7EkwDuOqho2qxgyRQXyBHk9hZqRKMBr+Xsu6zjeHlt+qkO2N2YRiHN7Kg4e1fEHDhjIp4bGJYVypv1g=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProgressLink AI · Oil India Limited</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&amp;family=Space+Mono:wght@400;700&amp;display=swap"
+    rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com/3.4.17" type="text/javascript"></script>
+  <script src="/_sdk/6c2ecc939521f244.data_sdk.js" onerror="this.remove()" type="text/javascript"
+    integrity="sha512-gRx8s+XsZDN6mSIQu2sivLZysbV0WHhb5kXNUWlgVb5lCMU1foJYukyMEDPv8Tnoocb8iwqB4XdRrWc7oEGzIQ=="></script>
+  <script src="/_sdk/6e4b845d05dd79e4.editing_sdk.js" onerror="this.remove()" type="text/javascript"
+    integrity="sha512-nfDAoBO2Sn6o6rLYgdnzgUs0nZfi4v1NV7M2ioocHZ6oj+ZnIEUmJGLGqFu2dnCue3Bjs5kWMae4qsFt05LfIA=="></script>
+  <script src="/_sdk/ddcab3e45959c817.resizing_sdk.js" onerror="this.remove()" type="text/javascript"
+    integrity="sha512-VAviUKfZVzugWBSeULYjSljTX+nb84wc6Zzbx5GQaQgh6X2ISSjXi8eIiCDGdwDh10esJMY0+QFQgUy9NcrTlQ=="></script>
+</head>
+
+<body data-template-id="__page-root">
+  <div class="app-shell">
+    <!-- SIDEBAR -->
+    <aside data-template-id="sidebar" class="canva-sidebar bg-blue-900 side flex flex-col text-white"
+      aria-label="Primary">
+      <div class="px-4 py-5 flex items-center gap-3 border-b border-white/10">
+        <div class="w-10 h-10 rounded-lg bg-white flex items-center justify-center shrink-0"><span
+            class="font-extrabold text-[13px] text-[#0b1f3a]">OIL</span>
+        </div>
+        <div class="hide-sm leading-tight">
+          <p data-template-id="brand-name" class="canva-text font-bold">ProgressLink AI</p>
+          <p data-template-id="brand-sub" class="canva-text">Oil India Limited · PMIS</p>
+        </div>
+      </div>
+      <nav class="flex-1 p-3 space-y-0.5" id="nav" aria-label="Main navigation">
+        <button class="nav-btn active" data-view="overview" data-roles="manager planner"><i
+            data-lucide="layout-dashboard"></i><span class="hide-sm">Overview</span></button> <button class="nav-btn"
+          data-view="live" data-roles="manager planner supervisor"><i data-lucide="activity"></i><span
+            class="hide-sm">Live Progress</span></button> <button class="nav-btn" data-view="linking"
+          data-roles="planner"><i data-lucide="git-merge"></i><span class="hide-sm">Activity Linking</span></button>
+        <button class="nav-btn" data-view="ingest" data-roles="planner supervisor"><i
+            data-lucide="upload-cloud"></i><span class="hide-sm">Data Ingestion</span></button> <button class="nav-btn"
+          data-view="review" data-roles="planner"><i data-lucide="clipboard-check"></i><span class="hide-sm">Planner
+            Review</span><span class="hide-sm ml-auto pill p-amber" id="nav-review-count"></span></button> <button
+          class="nav-btn" data-view="schedule" data-roles="planner supervisor"><i data-lucide="gantt-chart"></i><span
+            class="hide-sm">Schedule / L5-L6</span></button> <button class="nav-btn" data-view="agent"
+          data-roles="supervisor planner"><i data-lucide="bot"></i><span class="hide-sm">AI Time Agent</span></button>
+        <button class="nav-btn" data-view="risk" data-roles="manager planner"><i data-lucide="alert-triangle"></i><span
+            class="hide-sm">Delay &amp; Risk</span></button> <button class="nav-btn" data-view="memory"
+          data-roles="manager planner"><i data-lucide="library"></i><span class="hide-sm">Institutional
+            Memory</span></button> <button class="nav-btn" data-view="reports" data-roles="manager planner"><i
+            data-lucide="bar-chart-3"></i><span class="hide-sm">Reports</span></button> <button class="nav-btn"
+          data-view="audit" data-roles="manager planner"><i data-lucide="shield-check"></i><span class="hide-sm">Audit
+            Trail</span></button> <button class="nav-btn" data-view="settings"
+          data-roles="manager planner supervisor"><i data-lucide="settings"></i><span
+            class="hide-sm">Settings</span></button>
+      </nav>
+      <div class="p-4 border-t border-white/10 hide-sm">
+        <div class="flex items-center gap-3">
+          <div class="w-9 h-9 rounded-full bg-[#1d5fbf] flex items-center justify-center font-bold text-sm">
+            SA
+          </div>
+          <div class="leading-tight">
+            <p data-template-id="user-name" class="canva-text font-semibold">Soheb Ansari</p>
+            <p data-template-id="user-role" class="canva-text">Project Planner</p>
+          </div>
+        </div>
+        <p data-template-id="sys-status" class="canva-text mt-3">● System Operational</p>
+      </div>
+    </aside>
+    <div class="flex-1 min-w-0 flex flex-col">
+      <!-- TOPBAR -->
+      <header data-template-id="topbar"
+        class="backdrop-blur-md canva-header sticky top-0 z-40 border-b border-[#e3e8ef] px-6 py-3 flex items-center gap-4 flex-wrap">
+        <div class="flex items-center gap-2 border border-[#d7dee8] rounded-lg px-3 py-1.5 bg-white">
+          <i data-lucide="folder-kanban" class="w-4 h-4 text-slate-500"></i> <span data-template-id="project-name-top"
+            class="canva-text font-semibold">Refinery Expansion Project – Phase II</span> <span
+            class="pill p-green"><span class="w-1.5 h-1.5 rounded-full bg-[#0f9d8a] animate-pulse"></span>LIVE</span>
+        </div>
+        <div class="relative flex-1 min-w-[220px] max-w-md">
+          <label for="gsearch" class="sr-only">Global search</label> <i data-lucide="search"
+            class="w-4 h-4 text-slate-400 absolute left-3 top-1/2 -translate-y-1/2"></i> <input id="gsearch"
+            type="search" autocomplete="off" placeholder="Search activities, reports, IDs…"
+            class="w-full pl-9 pr-3 py-2 rounded-lg border border-[#d7dee8] bg-[#f8fafc] text-sm">
+          <div id="search-dd" class="dd card w-[640px] max-w-[90vw] left-0 right-auto p-2">
+            <p class="lbl px-2 py-1">Search results</p>
+            <div class="overflow-x-auto">
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Activity</th>
+                    <th>Discipline</th>
+                    <th>Status</th>
+                    <th>Actual Start</th>
+                    <th>Actual Finish</th>
+                    <th>Conf.</th>
+                  </tr>
+                </thead>
+                <tbody id="search-body"></tbody>
+              </table>
+            </div>
+            <p class="text-xs text-slate-500 px-2 py-2">Try: PIP-2401 · Line 24-XX · Pump P-101 · Piping · Delayed</p>
+          </div>
+        </div>
+        <div class="ml-auto flex items-center gap-2">
+          <label for="role" class="text-xs text-slate-500 font-semibold hidden md:block">Viewing as:</label> <select
+            id="role" class="text-sm border border-[#d7dee8] rounded-lg px-2 py-1.5 bg-white font-semibold">
+            <option value="planner">Project Planner</option>
+            <option value="manager">Project Manager</option>
+            <option value="supervisor">Site Supervisor</option>
+          </select>
+          <div class="relative">
+            <button id="bell"
+              class="relative w-9 h-9 rounded-lg border border-[#d7dee8] bg-white flex items-center justify-center"
+              aria-label="Notifications" aria-expanded="false"><i data-lucide="bell" class="w-4 h-4"></i><span
+                class="absolute -top-1 -right-1 w-4 h-4 rounded-full bg-[#d23b3b] text-white text-[10px] font-bold flex items-center justify-center">5</span></button>
+            <div id="notif-dd" class="dd card w-80 p-2">
+              <p class="lbl px-2 py-1">Notifications</p>
+              <ul class="text-sm divide-y divide-slate-100">
+                <li class="flex gap-2 p-2"><i data-lucide="alert-triangle"
+                    class="w-4 h-4 text-[#d98a0b] shrink-0 mt-0.5"></i>5 activities require planner review</li>
+                <li class="flex gap-2 p-2"><i data-lucide="check-circle-2"
+                    class="w-4 h-4 text-[#0f9d8a] shrink-0 mt-0.5"></i>18 new progress events processed</li>
+                <li class="flex gap-2 p-2"><i data-lucide="alert-triangle"
+                    class="w-4 h-4 text-[#d98a0b] shrink-0 mt-0.5"></i>PIP-2401 is delayed by 2 days</li>
+                <li class="flex gap-2 p-2"><i data-lucide="check-circle-2"
+                    class="w-4 h-4 text-[#0f9d8a] shrink-0 mt-0.5"></i>Daily report successfully processed</li>
+                <li class="flex gap-2 p-2"><i data-lucide="alert-octagon"
+                    class="w-4 h-4 text-[#d23b3b] shrink-0 mt-0.5"></i>3 unmatched activities detected</li>
+              </ul>
+            </div>
+          </div><button class="w-9 h-9 rounded-lg border border-[#d7dee8] bg-white flex items-center justify-center"
+            aria-label="Help"
+            onclick="toast('Help: follow the flow Data Ingestion → Extraction → Linking → Review → Schedule.')"><i
+              data-lucide="help-circle" class="w-4 h-4"></i></button>
+          <div class="w-9 h-9 rounded-full bg-[#0b1f3a] text-white text-xs font-bold flex items-center justify-center"
+            aria-label="User profile Soheb Ansari">
+            SA
+          </div>
+        </div>
+      </header>
+      <main class="p-6 max-w-[1400px] w-full mx-auto">
+        <!-- OVERVIEW -->
+        <section id="v-overview" class="view active" aria-labelledby="ov-h">
+          <div class="flex flex-wrap items-end justify-between gap-4 mb-5">
+            <div>
+              <div class="flex items-center gap-2 mb-1"><span data-template-id="ai-active-badge"
+                  class="canva-tag pill">AI Monitoring Active</span><span class="pill p-blue">Live Execution
+                  Monitoring</span>
+              </div>
+              <h1 id="ov-h" data-template-id="ov-title" class="canva-text font-extrabold tracking-tight">Project Control
+                Center</h1>
+              <p data-template-id="ov-sub" class="canva-text">Refinery Expansion Project – Phase II · Industrial
+                Infrastructure Project · Reporting Date: 30 September 2026</p>
+            </div>
+            <div class="flex gap-2"><button class="btn btn-ghost" data-go="ingest"><i data-lucide="upload"></i>Upload
+                Report</button><button class="btn btn-primary" data-go="reports"><i data-lucide="bar-chart-3"></i>View
+                Analytics</button>
+            </div>
+          </div>
+          <div data-template-id="banner"
+            class="canva-banner blueprint rounded-2xl p-5 mb-5 text-white flex flex-wrap items-center gap-5">
+            <div class="flex-1 min-w-[260px]">
+              <h2 data-template-id="banner-title" class="canva-text font-bold">From Messy Field Reports → Structured
+                Execution Events → Schedule-Linked Intelligence</h2>
+              <p data-template-id="banner-text" class="canva-text mt-1">Capture actual progress in real time. Link it to
+                L5/L6 activities. Give planners control. Preserve project knowledge.</p>
+            </div>
+            <div class="flex items-center gap-1.5 text-[11px] font-semibold flex-wrap">
+              <span class="px-2 py-1 rounded bg-white/10">FIELD DATA</span><i data-lucide="chevron-right"
+                class="w-3 h-3"></i> <span class="px-2 py-1 rounded bg-[#6d4bd1]/60">AI UNDERSTANDING</span><i
+                data-lucide="chevron-right" class="w-3 h-3"></i> <span class="px-2 py-1 rounded bg-white/10">L5/L6
+                LINKING</span><i data-lucide="chevron-right" class="w-3 h-3"></i> <span
+                class="px-2 py-1 rounded bg-[#0f9d8a]/70">VERIFIED ACTUALS</span>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-4 mb-5 stagger" id="kpis"></div>
+          <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
+            <div class="card p-5 xl:col-span-1">
+              <div class="flex justify-between items-center mb-4">
+                <h2 class="font-bold text-lg">Overall Project Progress</h2><span class="pill p-gray">Weighted</span>
+              </div>
+              <div class="flex items-center gap-6 flex-wrap">
+                <div class="relative w-40 h-40 shrink-0">
+                  <svg viewbox="0 0 120 120" class="w-full h-full -rotate-90">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#eef1f5" stroke-width="12" />
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#1d5fbf" stroke-width="12" stroke-linecap="round"
+                      stroke-dasharray="314" stroke-dashoffset="100.5" />
+                  </svg>
+                  <div class="absolute inset-0 flex flex-col items-center justify-center"><span
+                      class="text-4xl font-extrabold">68%</span><span class="text-xs text-slate-500">Completion</span>
+                  </div>
+                </div>
+                <div class="flex-1 min-w-[160px] space-y-3" id="disc-bars"></div>
+              </div>
+            </div>
+            <div class="card p-5 xl:col-span-2">
+              <div class="flex justify-between items-center mb-3">
+                <h2 class="font-bold text-lg flex items-center gap-2">Live Execution Feed <span
+                    class="w-2 h-2 rounded-full bg-[#0f9d8a] animate-pulse"></span></h2><button
+                  class="btn btn-ghost btn-sm" data-go="live">View all</button>
+              </div>
+              <ul class="divide-y divide-slate-100 feed-list"></ul>
+            </div>
+          </div>
+        </section><!-- LIVE -->
+        <section id="v-live" class="view" aria-labelledby="live-h">
+          <h1 id="live-h" data-template-id="live-title" class="canva-text font-extrabold">Live Progress</h1>
+          <p data-template-id="live-sub" class="canva-text mb-5">Real-time execution events captured from field sources
+            and linked to schedule activities.</p>
+          <div class="card p-4 mb-5 flex flex-wrap gap-3 items-center justify-between text-sm">
+            <div class="flex items-center gap-3 flex-wrap">
+              <span class="pill p-gray">Events today: 87</span><span class="pill p-green">Auto-linked: 66</span><span
+                class="pill p-amber">Review: 21</span><span class="pill p-red">Unmatched: 10</span>
+            </div><button class="btn btn-primary btn-sm" data-go="review">Open Review Queue</button>
+          </div>
+          <div class="card p-5">
+            <ul class="divide-y divide-slate-100 feed-list"></ul>
+          </div>
+        </section><!-- INGESTION -->
+        <section id="v-ingest" class="view" aria-labelledby="ing-h">
+          <h1 id="ing-h" data-template-id="ing-title" class="canva-text font-extrabold">Data Ingestion Center</h1>
+          <p data-template-id="ing-sub" class="canva-text mb-5">Capture project execution data from heterogeneous
+            sources.</p>
+          <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 mb-5">
+            <div id="drop" class="drop xl:col-span-2 p-10 flex flex-col items-center justify-center text-center">
+              <div class="w-14 h-14 rounded-2xl bg-[#e5eefc] text-[#1d5fbf] flex items-center justify-center mb-3"><i
+                  data-lucide="upload-cloud" class="w-7 h-7"></i>
+              </div>
+              <p data-template-id="drop-text" class="canva-text font-bold">Drop files here or browse</p>
+              <p class="text-xs text-slate-500 mt-1">Supported: XLSX · CSV · PDF · TXT · DOCX — up to 50 MB</p><label
+                for="file-in" class="btn btn-ghost mt-4 cursor-pointer"><i data-lucide="folder-open"></i>Browse
+                files</label> <input id="file-in" type="file" multiple accept=".xlsx,.csv,.pdf,.txt,.docx"
+                class="sr-only">
+              <div id="analyze-progress" class="hidden w-full max-w-sm mt-5 text-left">
+                <div class="flex justify-between text-xs font-semibold mb-1"><span id="an-step">Parsing
+                    document…</span><span id="an-pct">0%</span>
+                </div>
+                <div class="bar"><i id="an-bar" style="width:0;background:#6d4bd1"></i>
+                </div>
+              </div><button id="analyze" class="btn btn-primary mt-5"><i data-lucide="sparkles"></i><span
+                  data-template-id="analyze-btn" class="canva-text">Upload &amp; Analyze</span></button>
+            </div>
+            <div class="grid grid-cols-2 gap-3">
+              <div class="card p-4"><i data-lucide="file-text" class="w-5 h-5 text-[#1d5fbf]"></i>
+                <h2 class="font-semibold text-sm mt-2">Daily Progress Reports</h2>
+                <p class="text-xs text-slate-500">TXT, DOCX · 14 today</p>
+              </div>
+              <div class="card p-4"><i data-lucide="sheet" class="w-5 h-5 text-[#0f9d8a]"></i>
+                <h2 class="font-semibold text-sm mt-2">Discipline Spreadsheets</h2>
+                <p class="text-xs text-slate-500">XLSX, CSV · 6 today</p>
+              </div>
+              <div class="card p-4"><i data-lucide="notebook-pen" class="w-5 h-5 text-[#d98a0b]"></i>
+                <h2 class="font-semibold text-sm mt-2">Site Diaries</h2>
+                <p class="text-xs text-slate-500">PDF scans · 3 today</p>
+              </div>
+              <div class="card p-4"><i data-lucide="calendar-range" class="w-5 h-5 text-[#6d4bd1]"></i>
+                <h2 class="font-semibold text-sm mt-2">Primavera / MS Project</h2>
+                <p class="text-xs text-slate-500">XER, XLSX · Baseline v4</p>
+              </div>
+            </div>
+          </div>
+          <div class="card overflow-hidden">
+            <div class="p-4 flex justify-between items-center">
+              <h2 class="font-bold">Recent Uploads</h2><button class="btn btn-ghost btn-sm" data-go="extract"><i
+                  data-lucide="eye"></i>View Extraction</button>
+            </div>
+            <div class="overflow-x-auto">
+              <table class="tbl">
+                <thead>
+                  <tr>
+                    <th>File</th>
+                    <th>Source</th>
+                    <th>Discipline</th>
+                    <th>Uploaded</th>
+                    <th>Records</th>
+                    <th>Status</th>
+                  </tr>
+                </thead>
+                <tbody id="uploads"></tbody>
+              </table>
+            </div>
+          </div>
+        </section><!-- EXTRACTION -->
+        <section id="v-extract" class="view" aria-labelledby="ext-h">
+          <h1 id="ext-h" data-template-id="ext-title" class="canva-text font-extrabold">AI Activity Extraction</h1>
+          <p data-template-id="ext-sub" class="canva-text mb-5">Unstructured human reports converted into structured
+            execution events.</p>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 items-stretch">
+            <div class="card p-5">
+              <div class="flex justify-between mb-3">
+                <h2 class="font-bold">Raw Input</h2><span class="pill p-gray">daily_report_30_sep.txt · line 7</span>
+              </div>
+              <div class="rounded-xl bg-[#f8fafc] border border-dashed border-[#c9d4e3] p-5">
+                <p data-template-id="raw-text" class="canva-text mono">“Piping crew completed spool erection for Line
+                  24-XX today at 5 PM.”</p>
+              </div>
+              <div class="mt-4 text-xs text-slate-500 flex gap-4 flex-wrap"><span>Received 10:32 AM</span><span>Author:
+                  Site Supervisor – Unit 24</span><span>Lang: EN</span>
+              </div>
+            </div>
+            <div class="card p-5 border-[#dcd0ff]">
+              <div class="flex justify-between mb-3">
+                <h2 class="font-bold">AI Extracted Event</h2><span class="ai-badge"><i data-lucide="sparkles"
+                    class="w-3 h-3"></i>AI Extracted</span>
+              </div>
+              <dl class="grid grid-cols-2 gap-x-6 gap-y-3 text-sm">
+                <div>
+                  <dt class="lbl">
+                    Discipline
+                  </dt>
+                  <dd class="font-semibold">
+                    Piping
+                  </dd>
+                </div>
+                <div>
+                  <dt class="lbl">
+                    Activity
+                  </dt>
+                  <dd class="font-semibold">
+                    Spool erection – Line 24-XX
+                  </dd>
+                </div>
+                <div>
+                  <dt class="lbl">
+                    Event
+                  </dt>
+                  <dd><span class="pill p-green">COMPLETED</span>
+                  </dd>
+                </div>
+                <div>
+                  <dt class="lbl">
+                    Date · Time
+                  </dt>
+                  <dd class="font-semibold">
+                    30 Sep 2026 · 17:00
+                  </dd>
+                </div>
+                <div>
+                  <dt class="lbl">
+                    Location
+                  </dt>
+                  <dd class="font-semibold">
+                    Unit 24
+                  </dd>
+                </div>
+                <div>
+                  <dt class="lbl">
+                    Source
+                  </dt>
+                  <dd class="font-semibold">
+                    Daily Progress Report
+                  </dd>
+                </div>
+              </dl>
+              <div class="mt-4">
+                <div class="flex justify-between text-xs font-semibold mb-1"><span>AI Confidence</span><span
+                    class="text-[#0b7a6a]">96%</span>
+                </div>
+                <div class="bar"><i style="width:96%;background:#0f9d8a"></i>
+                </div>
+              </div>
+              <div class="flex gap-2 mt-5 flex-wrap">
+                <button class="btn btn-ghost" onclick="openInfo('extract')"><i data-lucide="scan-search"></i><span
+                    data-template-id="review-ext-btn" class="canva-text">Review Extraction</span></button> <button
+                  class="btn btn-primary" data-go="linking"><i data-lucide="git-merge"></i>Match Activity</button>
+              </div>
+            </div>
+          </div>
+        </section><!-- LINKING -->
+        <section id="v-linking" class="view" aria-labelledby="link-h">
+          <h1 id="link-h" data-template-id="link-title" class="canva-text font-extrabold">Intelligent Activity Linking
+          </h1>
+          <p data-template-id="link-sub" class="canva-text mb-5">Map field terminology to the correct L5/L6 schedule
+            activity.</p>
+          <div class="card p-4 mb-5 flex flex-wrap gap-6 items-center">
+            <div class="flex-1 min-w-[240px]">
+              <p class="lbl">Input description</p>
+              <p class="font-semibold mono text-sm mt-1">“Spool erection completed for Line 24-XX”</p>
+            </div>
+            <div>
+              <p class="lbl">Detected discipline</p><span class="pill p-blue mt-1">Piping</span>
+            </div>
+            <div>
+              <p class="lbl">Detected event</p><span class="pill p-green mt-1">Completed</span>
+            </div>
+            <div>
+              <p class="lbl">Source</p>
+              <p class="text-sm font-semibold mt-1">Daily Progress Report · 10:32</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 xl:grid-cols-3 gap-5 mb-5">
+            <div class="card xl:col-span-2 overflow-hidden">
+              <div class="p-4 flex justify-between items-center">
+                <h2 class="font-bold">Candidate Schedule Activities</h2><span class="ai-badge">AI Matched</span>
+              </div>
+              <div class="overflow-x-auto">
+                <table class="tbl">
+                  <thead>
+                    <tr>
+                      <th>Activity ID</th>
+                      <th>Activity Name</th>
+                      <th>WBS</th>
+                      <th>Match Score</th>
+                      <th>Status</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr style="background:#f0faf7;box-shadow:inset 3px 0 0 #0f9d8a">
+                      <td class="mono font-bold">PIP-2401</td>
+                      <td class="font-semibold">Erect Line 24-XX</td>
+                      <td>PIP-24</td>
+                      <td>
+                        <div class="flex items-center gap-2">
+                          <div class="bar w-24"><i style="width:94%;background:#0f9d8a"></i>
+                          </div><b>94%</b>
+                        </div>
+                      </td>
+                      <td><span class="pill p-green">✓ Recommended</span></td>
+                    </tr>
+                    <tr>
+                      <td class="mono">PIP-2402</td>
+                      <td>Weld Line 24-XX</td>
+                      <td>PIP-24</td>
+                      <td>
+                        <div class="flex items-center gap-2">
+                          <div class="bar w-24"><i style="width:41%;background:#d98a0b"></i>
+                          </div>41%
+                        </div>
+                      </td>
+                      <td><span class="pill p-amber">Possible</span></td>
+                    </tr>
+                    <tr>
+                      <td class="mono">PIP-2403</td>
+                      <td>Hydrotest Line 24-XX</td>
+                      <td>PIP-24</td>
+                      <td>
+                        <div class="flex items-center gap-2">
+                          <div class="bar w-24"><i style="width:18%;background:#d23b3b"></i>
+                          </div>18%
+                        </div>
+                      </td>
+                      <td><span class="pill p-red">Low Match</span></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="p-4 flex flex-wrap gap-2 border-t border-[#eef1f5]">
+                <button class="btn btn-teal" id="accept-match"><i data-lucide="check"></i><span
+                    data-template-id="accept-btn" class="canva-text">Accept Match</span></button> <button
+                  class="btn btn-ghost" onclick="toast('Select an alternative activity from the candidate list.')"><i
+                    data-lucide="repeat"></i><span data-template-id="change-btn" class="canva-text">Change
+                    Activity</span></button> <button class="btn btn-danger"
+                  onclick="toast('Match rejected — event moved to Unmatched queue.')"><i data-lucide="x"></i><span
+                    data-template-id="reject-btn" class="canva-text">Reject</span></button> <button
+                  class="btn btn-ghost" onclick="toast('New activity draft created under WBS PIP-24.')"><i
+                    data-lucide="plus"></i><span data-template-id="create-btn" class="canva-text">Create New
+                    Activity</span></button>
+              </div>
+            </div>
+            <div class="card p-5">
+              <div class="flex justify-between items-center">
+                <h2 class="font-bold">AI Confidence</h2><button class="btn btn-ghost btn-sm"
+                  onclick="openInfo('confidence')">Explain</button>
+              </div>
+              <div class="flex items-center gap-4 my-4">
+                <div class="relative w-24 h-24">
+                  <svg viewbox="0 0 120 120" class="w-full h-full -rotate-90">
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#eef1f5" stroke-width="14" />
+                    <circle cx="60" cy="60" r="50" fill="none" stroke="#0f9d8a" stroke-width="14" stroke-dasharray="314"
+                      stroke-dashoffset="18.8" />
+                  </svg><span
+                    class="absolute inset-0 flex items-center justify-center font-extrabold text-xl">94%</span>
+                </div>
+                <div><span class="pill p-green">HIGH CONFIDENCE</span>
+                  <p class="text-xs text-slate-500 mt-1">Above auto-link threshold (85%) — planner verification
+                    recommended for Actual Finish.</p>
+                </div>
+              </div>
+              <p class="lbl mb-2">Matching factors</p>
+              <div class="space-y-2 text-sm" id="factors"></div>
+            </div>
+          </div>
+          <div class="card p-5">
+            <div class="flex justify-between items-center mb-1">
+              <h2 data-template-id="gran-title" class="canva-text font-bold">Field-to-Schedule Granularity Mapping</h2>
+              <span class="ai-badge">AI Insight</span>
+            </div>
+            <p data-template-id="gran-text" class="canva-text mb-4">Multiple granular field events mapped to one planned
+              L5/L6 activity.</p>
+            <div class="relative grid grid-cols-[1fr_120px_1fr] md:grid-cols-[1fr_200px_1fr] items-center">
+              <div class="space-y-2">
+                <div class="rounded-lg border border-[#d7dee8] px-3 py-2 text-sm bg-[#f8fafc] flex justify-between">
+                  <span>Spool A installed</span><span class="text-xs text-slate-400">26 Sep</span>
+                </div>
+                <div class="rounded-lg border border-[#d7dee8] px-3 py-2 text-sm bg-[#f8fafc] flex justify-between">
+                  <span>Spool B installed</span><span class="text-xs text-slate-400">27 Sep</span>
+                </div>
+                <div class="rounded-lg border border-[#d7dee8] px-3 py-2 text-sm bg-[#f8fafc] flex justify-between">
+                  <span>Spool C installed</span><span class="text-xs text-slate-400">29 Sep</span>
+                </div>
+                <div class="rounded-lg border border-[#d7dee8] px-3 py-2 text-sm bg-[#f8fafc] flex justify-between">
+                  <span>Spool D installed</span><span class="text-xs text-slate-400">30 Sep</span>
+                </div>
+              </div>
+              <svg viewbox="0 0 200 176" preserveaspectratio="none" class="w-full h-44" aria-hidden="true">
+                <defs>
+                  <marker id="ah" markerwidth="8" markerheight="8" refx="7" refy="4" orient="auto">
+                    <path d="M0,0 L8,4 L0,8z" fill="#6d4bd1" />
+                  </marker>
+                </defs>
+                <path d="M0,20 C100,20 100,88 195,88" stroke="#6d4bd1" stroke-width="2" fill="none"
+                  marker-end="url(#ah)" />
+                <path d="M0,65 C100,65 100,88 195,88" stroke="#6d4bd1" stroke-width="2" fill="none" />
+                <path d="M0,111 C100,111 100,88 195,88" stroke="#6d4bd1" stroke-width="2" fill="none" />
+                <path d="M0,156 C100,156 100,88 195,88" stroke="#6d4bd1" stroke-width="2" fill="none" />
+              </svg>
+              <div class="rounded-xl border-2 border-[#1d5fbf] bg-[#eaf2fd] p-4">
+                <p class="lbl">Schedule Activity · L5</p>
+                <p class="mono font-bold mt-1">PIP-2401</p>
+                <p class="font-semibold">“Erect Line 24-XX”</p>
+                <p class="text-xs text-slate-600 mt-2">Actual Start = first event (26 Sep) · Actual Finish = last event
+                  (30 Sep)</p>
+              </div>
+            </div>
+          </div>
+        </section><!-- REVIEW -->
+        <section id="v-review" class="view" aria-labelledby="rev-h">
+          <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+            <div>
+              <h1 id="rev-h" data-template-id="rev-title" class="canva-text font-extrabold">Planner Review Queue</h1>
+              <p data-template-id="rev-sub" class="canva-text">Human-in-the-loop verification of AI-suggested schedule
+                links.</p>
+            </div><span class="pill p-amber text-sm" id="review-count">21 items requiring review</span>
+          </div>
+          <div class="flex flex-wrap gap-2 mb-4" id="rev-filters" role="group" aria-label="Filter review queue">
+            <button class="chip on" data-f="all">All</button><button class="chip" data-f="high">High
+              Confidence</button><button class="chip" data-f="medium">Medium</button><button class="chip"
+              data-f="low">Low</button><button class="chip" data-f="unmatched">Unmatched</button> <span
+              class="w-px bg-slate-300 mx-1"></span> <button class="chip" data-f="Piping">Piping</button><button
+              class="chip" data-f="Civil">Civil</button><button class="chip"
+              data-f="Electrical">Electrical</button><button class="chip"
+              data-f="Instrumentation">Instrumentation</button>
+          </div>
+          <div class="card overflow-x-auto">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Input</th>
+                  <th>Suggested Activity</th>
+                  <th>Discipline</th>
+                  <th>Confidence</th>
+                  <th>Reason</th>
+                  <th>Source · Time</th>
+                  <th>Action</th>
+                </tr>
+              </thead>
+              <tbody id="rev-body"></tbody>
+            </table>
+          </div>
+        </section><!-- SCHEDULE -->
+        <section id="v-schedule" class="view" aria-labelledby="sch-h">
+          <div class="flex flex-wrap justify-between items-end gap-3 mb-4">
+            <div>
+              <h1 id="sch-h" data-template-id="sch-title" class="canva-text font-extrabold">L5/L6 Schedule Control</h1>
+              <p data-template-id="sch-sub" class="canva-text">Baseline v4 · Data date 30 Sep 2026 · Actuals verified
+                through ProgressLink AI</p>
+            </div><button class="btn btn-primary" data-go="reports"><i data-lucide="bar-chart-3"></i>View
+              Analytics</button>
+          </div>
+          <div class="card overflow-x-auto mb-5">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Activity ID</th>
+                  <th>WBS</th>
+                  <th>Discipline</th>
+                  <th>Activity</th>
+                  <th>Planned Start</th>
+                  <th>Planned Finish</th>
+                  <th>Actual Start</th>
+                  <th>Actual Finish</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody id="sch-body"></tbody>
+            </table>
+          </div>
+          <div class="card p-5">
+            <div class="flex flex-wrap justify-between items-center mb-3 gap-2">
+              <h2 class="font-bold">Baseline vs Actual</h2>
+              <div class="flex gap-4 text-xs text-slate-600"><span class="flex items-center gap-1"><i
+                    class="inline-block w-5 h-1 bg-[#b8c2cf]"></i>Baseline</span><span
+                  class="flex items-center gap-1"><i
+                    class="inline-block w-5 h-2 bg-[#1d5fbf] rounded"></i>Actual</span><span
+                  class="flex items-center gap-1"><i class="inline-block w-5 h-2 bg-[#d98a0b] rounded"></i>Delay</span>
+              </div>
+            </div>
+            <div class="grid grid-cols-[110px_1fr] text-xs">
+              <div></div>
+              <div class="flex justify-between text-slate-400 pb-1 border-b border-[#e3e8ef]" id="g-axis"></div>
+              <div id="g-labels"></div>
+              <div id="g-rows" class="relative"></div>
+            </div>
+          </div>
+        </section><!-- AGENT -->
+        <section id="v-agent" class="view" aria-labelledby="agent-h">
+          <h1 id="agent-h" data-template-id="agent-title" class="canva-text font-extrabold">AI Time Agent</h1>
+          <p data-template-id="agent-sub" class="canva-text mb-5">Log actual start/end events using natural language.
+          </p>
+          <div class="grid grid-cols-1 xl:grid-cols-3 gap-5">
+            <div class="card xl:col-span-2 flex flex-col" style="min-height:560px">
+              <div class="p-4 border-b border-[#eef1f5] flex justify-between items-center">
+                <h2 class="font-bold flex items-center gap-2"><i data-lucide="bot"
+                    class="w-4 h-4 text-[#6d4bd1]"></i>Event Logging Session</h2><span class="pill p-gray">Unit 24 ·
+                  Shift A</span>
+              </div>
+              <div id="chat" class="flex-1 p-5 space-y-4 overflow-y-auto">
+                <div class="flex justify-end">
+                  <div class="max-w-[75%] bg-[#0b1f3a] text-white rounded-2xl rounded-br-sm px-4 py-2.5 text-sm">
+                    <p class="text-[10px] uppercase tracking-wider text-blue-200 font-semibold mb-0.5">Supervisor ·
+                      10:04</p>“Piping line 24-XX erection started at 10 AM today.”
+                  </div>
+                </div>
+                <div class="flex gap-2">
+                  <div class="w-8 h-8 rounded-lg bg-[#efe9ff] flex items-center justify-center shrink-0"><i
+                      data-lucide="sparkles" class="w-4 h-4 text-[#6d4bd1]"></i>
+                  </div>
+                  <div class="max-w-[80%] card p-4 text-sm">
+                    <p class="mb-3">I identified the following activity:</p>
+                    <dl class="grid grid-cols-2 gap-3 bg-[#f8fafc] rounded-lg p-3 border border-[#eef1f5]">
+                      <div class="col-span-2">
+                        <dt class="lbl">
+                          Activity
+                        </dt>
+                        <dd class="font-semibold"><span class="mono">PIP-2401</span> — Erect Line 24-XX
+                        </dd>
+                      </div>
+                      <div>
+                        <dt class="lbl">
+                          Event
+                        </dt>
+                        <dd class="font-semibold">
+                          Actual Start
+                        </dd>
+                      </div>
+                      <div>
+                        <dt class="lbl">
+                          Confidence
+                        </dt>
+                        <dd><span class="pill p-green">96%</span>
+                        </dd>
+                      </div>
+                      <div>
+                        <dt class="lbl">
+                          Date
+                        </dt>
+                        <dd class="font-semibold">
+                          30 Sep 2026
+                        </dd>
+                      </div>
+                      <div>
+                        <dt class="lbl">
+                          Time
+                        </dt>
+                        <dd class="font-semibold">
+                          10:00 AM
+                        </dd>
+                      </div>
+                    </dl>
+                    <p class="mt-3">Would you like to record this event?</p>
+                    <div class="flex gap-2 mt-3" id="agent-actions">
+                      <button class="btn btn-teal btn-sm" id="agent-confirm"><i data-lucide="check"></i>Confirm</button>
+                      <button class="btn btn-ghost btn-sm"
+                        onclick="document.getElementById('agent-input').value='Piping line 24-XX erection started at 10 AM today.';document.getElementById('agent-input').focus()"><i
+                          data-lucide="pencil"></i>Edit</button> <button class="btn btn-danger btn-sm"
+                        onclick="document.getElementById('agent-actions').classList.add('hidden');toast('Event discarded.')"><i
+                          data-lucide="x"></i>Cancel</button>
+                    </div>
+                    <div id="agent-done" class="hidden mt-3 rounded-lg bg-[#e3f6f1] border border-[#b6e6da] p-3">
+                      <p data-template-id="agent-confirmed-title" class="canva-text font-bold">✓ Actual Start Recorded
+                      </p>
+                      <p class="text-xs mt-1 text-slate-700">Audit ID: <span
+                          class="mono font-bold">EVT-20260930-0012</span> · Source: AI Time Agent</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <form id="agent-form" class="p-4 border-t border-[#eef1f5] flex gap-2">
+                <label for="agent-input" class="sr-only">Describe what happened on site</label> <input id="agent-input"
+                  class="flex-1 border border-[#d7dee8] rounded-lg px-3 py-2 text-sm"
+                  placeholder="Describe what happened on site…"> <button type="button"
+                  class="w-10 rounded-lg border border-[#d7dee8] flex items-center justify-center text-slate-400 cursor-not-allowed"
+                  aria-label="Voice input unavailable in this preview" title="Voice input unavailable in this preview"
+                  disabled><i data-lucide="mic" class="w-4 h-4"></i></button> <button type="submit"
+                  class="btn btn-primary"><i data-lucide="send"></i>Send</button>
+              </form>
+            </div>
+            <aside class="card p-5 h-fit" aria-label="Agent tips">
+              <h2 class="font-bold mb-3">Try saying</h2>
+              <ul class="space-y-2 text-sm text-slate-700">
+                <li class="p-2 rounded-lg bg-[#f8fafc]">“Excavation for pump P-101 finished at 4 PM.”</li>
+                <li class="p-2 rounded-lg bg-[#f8fafc]">“Cable pulling started in substation this morning.”</li>
+                <li class="p-2 rounded-lg bg-[#f8fafc]">“Hydrotest on line 24-XX begun at 2 PM.”</li>
+              </ul>
+              <p class="text-xs text-slate-500 mt-4">All agent-logged events are timestamped, confidence-scored and
+                written to the Audit Trail.</p>
+            </aside>
+          </div>
+        </section><!-- RISK -->
+        <section id="v-risk" class="view" aria-labelledby="risk-h">
+          <h1 id="risk-h" data-template-id="risk-title" class="canva-text font-extrabold">Delay &amp; Risk Intelligence
+          </h1>
+          <p data-template-id="risk-sub" class="canva-text mb-5">Variance against baseline with AI-classified delay
+            causes.</p>
+          <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-5 stagger">
+            <div class="card p-4">
+              <p class="lbl">Delayed Activities</p>
+              <p class="text-3xl font-extrabold mt-1">37</p>
+              <p class="text-xs text-[#9a5d00]">+4 vs last week</p>
+            </div>
+            <div class="card p-4 border-l-4 border-l-[#d23b3b]">
+              <p class="lbl">Critical Delays</p>
+              <p class="text-3xl font-extrabold mt-1 text-[#b12a2a]">8</p>
+              <p class="text-xs text-slate-500">On critical path</p>
+            </div>
+            <div class="card p-4">
+              <p class="lbl">Average Delay</p>
+              <p class="text-3xl font-extrabold mt-1">2.7 <span class="text-base">days</span></p>
+              <p class="text-xs text-slate-500">Across delayed items</p>
+            </div>
+            <div class="card p-4">
+              <p class="lbl">At-Risk Activities</p>
+              <p class="text-3xl font-extrabold mt-1">19</p>
+              <p class="text-xs text-slate-500">AI forecast · next 14 days</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-5">
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Delay by Discipline</h2>
+              <div class="h-56">
+                <canvas id="c-disc" aria-label="Delay by discipline chart" role="img"></canvas>
+              </div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Delay Causes <span class="ai-badge ml-1">AI Classified</span></h2>
+              <div class="h-56">
+                <canvas id="c-cause" aria-label="Delay causes chart" role="img"></canvas>
+              </div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Planned vs Actual Duration (days)</h2>
+              <div class="h-56">
+                <canvas id="c-pva" aria-label="Planned versus actual duration chart" role="img"></canvas>
+              </div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Weekly Delay Trend</h2>
+              <div class="h-56">
+                <canvas id="c-trend" aria-label="Weekly delay trend chart" role="img"></canvas>
+              </div>
+            </div>
+          </div>
+          <div class="card overflow-x-auto">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Activity</th>
+                  <th>Delay</th>
+                  <th>Cause</th>
+                  <th>Discipline</th>
+                  <th>Risk</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><span class="mono font-bold">PIP-2401</span> Erect Line 24-XX</td>
+                  <td class="font-bold text-[#b12a2a]">+2 days</td>
+                  <td>Material</td>
+                  <td>Piping</td>
+                  <td><span class="pill p-red">High</span></td>
+                </tr>
+                <tr>
+                  <td><span class="mono font-bold">ELE-301</span> Cable Tray Installation</td>
+                  <td class="font-bold text-[#9a5d00]">+1 day</td>
+                  <td>Manpower</td>
+                  <td>Electrical</td>
+                  <td><span class="pill p-amber">Medium</span></td>
+                </tr>
+                <tr>
+                  <td><span class="mono font-bold">INS-401</span> Instrument Installation</td>
+                  <td class="font-bold text-[#9a5d00]">+1 day</td>
+                  <td>Permit</td>
+                  <td>Instrumentation</td>
+                  <td><span class="pill p-amber">Medium</span></td>
+                </tr>
+                <tr>
+                  <td><span class="mono font-bold">CIV-1021</span> Excavation for Pump P-101</td>
+                  <td>0 days</td>
+                  <td>—</td>
+                  <td>Civil</td>
+                  <td><span class="pill p-green">Low</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section><!-- MEMORY -->
+        <section id="v-memory" class="view" aria-labelledby="mem-h">
+          <h1 id="mem-h" data-template-id="mem-title" class="canva-text font-extrabold">Institutional Memory</h1>
+          <p data-template-id="mem-sub" class="canva-text mb-5">Turn historical execution data into reusable project
+            knowledge.</p>
+          <form id="kb-form" class="card p-3 flex gap-2 mb-5">
+            <label for="kb-input" class="sr-only">Ask the project knowledge base</label> <i data-lucide="library"
+              class="w-5 h-5 text-[#6d4bd1] self-center ml-1"></i> <input id="kb-input"
+              class="flex-1 px-2 py-2 text-sm outline-none" placeholder="Ask the project knowledge base…"> <button
+              type="submit" class="btn btn-primary">Ask</button>
+          </form>
+          <div class="flex flex-wrap gap-2 mb-3">
+            <button class="chip kb-q">How long did similar piping activities take?</button> <button
+              class="chip kb-q">What are the most common delay causes?</button> <button class="chip kb-q">Which
+              activities frequently exceed planned duration?</button>
+          </div>
+          <div id="kb-answer" class="hidden card p-4 mb-5 border-[#dcd0ff] bg-[#faf8ff]"><span class="ai-badge mb-2">AI
+              Insight</span>
+            <p id="kb-text" class="text-sm mt-2"></p>
+            <p class="text-xs text-slate-500 mt-2">Source: 14 completed projects · 3,420 verified events</p>
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-3 gap-5 mb-5">
+            <div class="card p-5 bg-[#0b1f3a] text-white border-0">
+              <p class="text-[11px] font-semibold tracking-widest text-blue-200">AVERAGE ACTUAL DURATION</p>
+              <p class="mt-2 text-slate-300 text-sm">Piping erection</p>
+              <p class="text-5xl font-extrabold">5.6 <span class="text-xl">days</span></p>
+              <div class="flex gap-6 mt-4 text-sm">
+                <div>
+                  <p class="text-[11px] text-blue-200 font-semibold">PLANNED</p>
+                  <p class="font-bold">4.2 days</p>
+                </div>
+                <div>
+                  <p class="text-[11px] text-blue-200 font-semibold">AVG VARIANCE</p>
+                  <p class="font-bold text-[#ffc56b]">+1.4 days</p>
+                </div>
+              </div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Recurring Delay Patterns</h2>
+              <div class="space-y-2.5 text-sm" id="patterns"></div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Historical Execution Knowledge</h2>
+              <ul class="space-y-3 text-sm">
+                <li class="flex gap-2"><i data-lucide="lightbulb"
+                    class="w-4 h-4 text-[#6d4bd1] shrink-0 mt-0.5"></i>Similar piping erection activities exceeded
+                  planned duration by an average of 1.4 days.</li>
+                <li class="flex gap-2"><i data-lucide="lightbulb"
+                    class="w-4 h-4 text-[#6d4bd1] shrink-0 mt-0.5"></i>Electrical cable installation frequently
+                  experiences material-related delays.</li>
+                <li class="flex gap-2"><i data-lucide="lightbulb"
+                    class="w-4 h-4 text-[#6d4bd1] shrink-0 mt-0.5"></i>Civil foundation activities show lower variance
+                  than piping activities.</li>
+              </ul>
+            </div>
+          </div>
+        </section><!-- REPORTS -->
+        <section id="v-reports" class="view" aria-labelledby="rep-h">
+          <div class="flex flex-wrap justify-between items-end gap-3 mb-5">
+            <div>
+              <h1 id="rep-h" data-template-id="rep-title" class="canva-text font-extrabold">Execution Analytics</h1>
+              <p data-template-id="rep-sub" class="canva-text">Progress, productivity and variance built from verified
+                actuals.</p>
+            </div>
+            <div class="flex items-center gap-2"><label for="date-f"
+                class="text-xs font-semibold text-slate-500">Period</label> <select id="date-f"
+                class="border border-[#d7dee8] rounded-lg px-2 py-1.5 text-sm">
+                <option value="7">Last 7 Days</option>
+                <option value="30" selected>Last 30 Days</option>
+                <option value="month">This Month</option>
+                <option value="custom">Custom Range</option>
+              </select>
+            </div>
+          </div>
+          <div id="rep-updated"
+            class="hidden card p-3 mb-4 bg-[#e3f6f1] border-[#b6e6da] text-sm flex items-center gap-2"><i
+              data-lucide="check-circle-2" class="w-4 h-4 text-[#0b7a6a]"></i>Analytics updated · Completed activities
+            <b>172 → 173</b> after planner-verified Actual Finish for PIP-2401.
+          </div>
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Project Progress Trend — Planned vs Actual (%)</h2>
+              <div class="h-60">
+                <canvas id="c-prog" role="img" aria-label="Progress trend chart"></canvas>
+              </div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Activity Completion Trend</h2>
+              <div class="h-60">
+                <canvas id="c-comp" role="img" aria-label="Completion trend chart"></canvas>
+              </div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Discipline Productivity (events / day)</h2>
+              <div class="h-60">
+                <canvas id="c-prod" role="img" aria-label="Productivity chart"></canvas>
+              </div>
+            </div>
+            <div class="card p-5">
+              <h2 class="font-bold mb-3">Schedule Variance &amp; Duration Distribution</h2>
+              <div class="h-60">
+                <canvas id="c-dist" role="img" aria-label="Duration distribution chart"></canvas>
+              </div>
+            </div>
+          </div>
+        </section><!-- AUDIT -->
+        <section id="v-audit" class="view" aria-labelledby="aud-h">
+          <h1 id="aud-h" data-template-id="aud-title" class="canva-text font-extrabold">Audit Trail</h1>
+          <p data-template-id="aud-sub" class="canva-text mb-5">Immutable record of every schedule change — who, what,
+            when, source and confidence.</p>
+          <div class="card p-3 mb-4 grid grid-cols-2 md:grid-cols-5 gap-2 text-sm">
+            <div><label for="af-act" class="lbl block mb-1">Activity</label><input id="af-act"
+                class="w-full border border-[#d7dee8] rounded-lg px-2 py-1.5" placeholder="e.g. PIP-2401">
+            </div>
+            <div><label for="af-user" class="lbl block mb-1">User</label><select id="af-user"
+                class="w-full border border-[#d7dee8] rounded-lg px-2 py-1.5">
+                <option value="">All</option>
+                <option>AI + Planner</option>
+                <option>Soheb Ansari</option>
+                <option>AI Agent</option>
+              </select>
+            </div>
+            <div><label for="af-src" class="lbl block mb-1">Source</label><select id="af-src"
+                class="w-full border border-[#d7dee8] rounded-lg px-2 py-1.5">
+                <option value="">All</option>
+                <option>Daily Report</option>
+                <option>Spreadsheet</option>
+                <option>AI Time Agent</option>
+                <option>Site Diary</option>
+              </select>
+            </div>
+            <div><label for="af-date" class="lbl block mb-1">Date</label><select id="af-date"
+                class="w-full border border-[#d7dee8] rounded-lg px-2 py-1.5">
+                <option value="">All</option>
+                <option>30 Sep 2026</option>
+                <option>29 Sep 2026</option>
+              </select>
+            </div>
+            <div><label for="af-action" class="lbl block mb-1">Action</label><select id="af-action"
+                class="w-full border border-[#d7dee8] rounded-lg px-2 py-1.5">
+                <option value="">All</option>
+                <option>Actual Finish Updated</option>
+                <option>Actual Start Updated</option>
+                <option>Mapping Changed</option>
+              </select>
+            </div>
+          </div>
+          <div class="card overflow-x-auto">
+            <table class="tbl">
+              <thead>
+                <tr>
+                  <th>Timestamp</th>
+                  <th>Event ID</th>
+                  <th>Activity ID</th>
+                  <th>Action</th>
+                  <th>Previous</th>
+                  <th>New Value</th>
+                  <th>Source</th>
+                  <th>User</th>
+                  <th>Conf.</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody id="aud-body"></tbody>
+            </table>
+          </div>
+        </section><!-- SETTINGS -->
+        <section id="v-settings" class="view" aria-labelledby="set-h">
+          <h1 id="set-h" data-template-id="set-title" class="canva-text font-extrabold">Settings</h1>
+          <p data-template-id="set-sub" class="canva-text mb-5">Configure project, users, AI behaviour and governance.
+          </p>
+          <div class="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-5">
+            <nav class="card p-2 h-fit" aria-label="Settings sections" id="set-tabs">
+              <button class="nav-btn !text-slate-700" data-s="project">Project Settings</button> <button
+                class="nav-btn !text-slate-700" data-s="users">Users &amp; Roles</button> <button
+                class="nav-btn !text-slate-700 active" data-s="thresholds">Confidence Thresholds</button> <button
+                class="nav-btn !text-slate-700" data-s="sources">Data Sources</button> <button
+                class="nav-btn !text-slate-700" data-s="notif">Notification Settings</button> <button
+                class="nav-btn !text-slate-700" data-s="ai">AI Configuration</button> <button
+                class="nav-btn !text-slate-700" data-s="audit">Audit Settings</button>
+            </nav>
+            <div class="card p-6">
+              <div class="set-pane hidden" data-p="project">
+                <h2 class="font-bold mb-3">Project Settings</h2>
+                <p class="text-sm text-slate-600">Refinery Expansion Project – Phase II · Baseline v4 · Calendar: 6-day
+                  week · Data date: 30 Sep 2026</p>
+              </div>
+              <div class="set-pane hidden" data-p="users">
+                <h2 class="font-bold mb-3">Users &amp; Roles</h2>
+                <table class="tbl">
+                  <thead>
+                    <tr>
+                      <th>User</th>
+                      <th>Role</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Soheb Ansari</td>
+                      <td>Project Planner</td>
+                    </tr>
+                    <tr>
+                      <td>R. Baruah</td>
+                      <td>Site Supervisor</td>
+                    </tr>
+                    <tr>
+                      <td>A. Sharma</td>
+                      <td>Project Manager</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="set-pane" data-p="thresholds">
+                <h2 class="font-bold mb-1">Confidence Thresholds</h2>
+                <p class="text-sm text-slate-500 mb-5">Define how AI matches are routed.</p>
+                <div class="grid sm:grid-cols-2 gap-4 max-w-lg">
+                  <div><label for="t-auto" class="lbl block mb-1">Auto-link ≥ (%)</label><input id="t-auto"
+                      type="number" min="61" max="99" value="85"
+                      class="w-full border border-[#d7dee8] rounded-lg px-3 py-2">
+                  </div>
+                  <div><label for="t-rev" class="lbl block mb-1">Planner review ≥ (%)</label><input id="t-rev"
+                      type="number" min="1" max="98" value="60"
+                      class="w-full border border-[#d7dee8] rounded-lg px-3 py-2">
+                  </div>
+                </div>
+                <div class="mt-6 h-4 rounded-full overflow-hidden flex" aria-hidden="true">
+                  <div id="band-u" class="bg-[#d23b3b]"></div>
+                  <div id="band-r" class="bg-[#d98a0b]"></div>
+                  <div id="band-a" class="bg-[#0f9d8a]"></div>
+                </div>
+                <div class="flex flex-wrap gap-4 mt-3 text-sm" id="band-text"></div><button class="btn btn-primary mt-5"
+                  onclick="toast('Confidence thresholds saved.')">Save thresholds</button>
+              </div>
+              <div class="set-pane hidden" data-p="sources">
+                <h2 class="font-bold mb-3">Data Sources</h2>
+                <p class="text-sm text-slate-600">Daily reports (email/TXT), discipline spreadsheets, site diaries
+                  (OCR), Primavera P6 XER exports.</p>
+              </div>
+              <div class="set-pane hidden" data-p="notif">
+                <h2 class="font-bold mb-3">Notification Settings</h2><label
+                  class="flex items-center gap-2 text-sm"><input type="checkbox" id="n1" checked>Notify when review
+                  queue exceeds 20</label>
+              </div>
+              <div class="set-pane hidden" data-p="ai">
+                <h2 class="font-bold mb-3">AI Configuration</h2>
+                <p class="text-sm text-slate-600">Extraction model: domain-tuned NER · Matching: hybrid semantic +
+                  keyword + WBS context · Language: EN / HI</p>
+              </div>
+              <div class="set-pane hidden" data-p="audit">
+                <h2 class="font-bold mb-3">Audit Settings</h2>
+                <p class="text-sm text-slate-600">Retention: 10 years · Immutable log · Planner signature required for
+                  Actual Finish changes.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </div><!-- Approval modal -->
+  <div class="modal-bg" id="m-approve" role="dialog" aria-modal="true" aria-labelledby="ma-h">
+    <div class="card w-full max-w-lg p-6">
+      <div class="flex justify-between items-start mb-3">
+        <h2 id="ma-h" data-template-id="modal-approve-title" class="canva-text font-bold">Planner Approval — Update
+          Schedule</h2><button class="close-m" aria-label="Close"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <dl class="grid grid-cols-2 gap-3 text-sm bg-[#f8fafc] rounded-lg p-4 border border-[#eef1f5]">
+        <div>
+          <dt class="lbl">
+            Activity
+          </dt>
+          <dd class="font-semibold mono">
+            PIP-2401
+          </dd>
+        </div>
+        <div>
+          <dt class="lbl">
+            Name
+          </dt>
+          <dd class="font-semibold">
+            Erect Line 24-XX
+          </dd>
+        </div>
+        <div>
+          <dt class="lbl">
+            Field
+          </dt>
+          <dd class="font-semibold">
+            Actual Finish
+          </dd>
+        </div>
+        <div>
+          <dt class="lbl">
+            New value
+          </dt>
+          <dd class="font-semibold">
+            30 Sep 2026 — 17:00
+          </dd>
+        </div>
+        <div>
+          <dt class="lbl">
+            Source
+          </dt>
+          <dd>
+            Daily Progress Report
+          </dd>
+        </div>
+        <div>
+          <dt class="lbl">
+            Confidence
+          </dt>
+          <dd><span class="pill p-green">94%</span>
+          </dd>
+        </div>
+      </dl>
+      <p class="text-xs text-slate-500 mt-3">Approval will be recorded in the Audit Trail as verified by Project
+        Planner.</p>
+      <div class="flex justify-end gap-2 mt-5"><button class="btn btn-ghost close-m">Cancel</button><button
+          class="btn btn-teal" id="do-approve"><i data-lucide="check"></i><span data-template-id="modal-approve-btn"
+            class="canva-text">Approve &amp; Update Schedule</span></button>
+      </div>
+    </div>
+  </div><!-- Info modal -->
+  <div class="modal-bg" id="m-info" role="dialog" aria-modal="true" aria-labelledby="mi-h">
+    <div class="card w-full max-w-lg p-6">
+      <div class="flex justify-between items-start mb-3">
+        <h2 id="mi-h" class="font-bold text-lg"></h2><button class="close-m" aria-label="Close"><i data-lucide="x"
+            class="w-5 h-5"></i></button>
+      </div>
+      <div id="mi-body" class="text-sm space-y-2"></div>
+    </div>
+  </div>
+  <div id="toast"
+    class="fixed bottom-6 right-6 z-[70] hidden card px-4 py-3 text-sm font-medium bg-[#0b1f3a] text-white border-0 max-w-sm"
+    role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,207 @@
+**PROGRESSLINK** AI
+AI-Powered Field-to-Schedule Intelligence
+Connecting what was planned with what actually happened.
+**PROGRESSLINK** AI is an intelligent field-to-schedule bridge developed for Smart India Hackathon **2026** – Problem Statement **26122**.
+It connects structured project schedules with field execution data, helping project teams capture actual progress, identify the corresponding L5/L6 schedule activity, validate uncertain matches, and maintain an auditable record of execution.
+🚀 The Problem
+Infrastructure projects are managed using structured schedules containing activities, **WBS** levels, dependencies, dates, and milestones.
+However, actual execution information is often received through different sources such as:
+- Daily progress reports
+- Site diaries
+- Excel / **CSV** files
+- Discipline-specific reports
+- Text-based field updates
+Field descriptions can differ significantly from the terminology and level of detail used in the planned schedule.
+For example:
+### Planned Activity
+Erect Line 24-XX
+
+### Field Update
+
+Spool erection completed for Line 24-XX.
+
+Manually identifying that both refer to the same planned activity can be slow, inconsistent, and difficult to maintain at project scale.
+💡 Our Solution
+**PROGRESSLINK** AI creates an intelligent Field-to-Schedule Bridge between project planning and field execution.
+The solution follows:
+```text
+Field Data → Extraction → Activity Identification → L5/L6 Matching → Confidence Scoring → Planner Review → Schedule Update → Project Memory
+```
+Instead of replacing the planner, **PROGRESSLINK** AI assists the planner by identifying likely schedule matches and highlighting uncertain cases for human verification.
+### Core Capabilities
+
+📥 **Multi-Format Data Capture**
+Captures field execution information from different report formats and sources.
+
+🧠 **Intelligent Data Extraction**
+Identifies relevant information such as activity, date, location, discipline, status, and execution events.
+
+🔗 **L5/L6 Schedule Linking**
+Connects field descriptions with the appropriate planned schedule activity using semantic and contextual matching.
+
+📊 **Confidence-Based Matching**
+Generates a confidence score for proposed activity mappings.
+
+👤 **Human-in-the-Loop Review**
+Low-confidence or unmatched activities are routed to planners for verification instead of being silently assigned.
+
+🔄 **Progress Update**
+Verified field events can be reflected against the corresponding planned activity.
+
+📝 **Audit Trail**
+Important schedule changes can be traced through their source, action, timestamp, confidence, and verification information.
+
+🧠 **Institutional Memory**
+Structured execution information provides a foundation for understanding actual durations, recurring delays, bottlenecks, and historical project performance.
+
+
+🔄 **How It Works**
+## 01 — Capture
+
+Field teams provide execution information through reports, spreadsheets, or direct updates.
+
+## 02 — Understand
+
+The system identifies important execution information such as activity, action, date, location, discipline, and status.
+
+## 03 — Match
+
+Extracted information is compared against planned L5/L6 schedule activities.
+
+## 04 — Score
+
+Potential matches are ranked using semantic and contextual signals.
+
+## 05 — Review
+
+Uncertain or unmatched results are presented to the planner for validation.
+
+## 06 — Update
+
+Once verified, the actual progress is linked to the schedule and recorded in the audit trail.
+
+## 07 — Learn
+
+The resulting structured execution data becomes a foundation for analytics and project memory.
+
+⭐ What Makes **PROGRESSLINK** AI Different?
+
+Unlike a conventional project dashboard, **PROGRESSLINK** AI focuses on the difficult connection between:
+What was planned
+and
+What actually happened in the field.
+
+## 🛠️ Technology Stack
+
+### Production Architecture
+
+<p align="left">
+  <img src="https://skillicons.dev/icons?i=react,nextjs,ts,tailwind,python,fastapi,postgresql,docker,linux" alt="Production Technology Stack" />
+</p>
+
+| Layer | Technologies |
+|---|---|
+| **Frontend** | React.js · Next.js · TypeScript · Tailwind CSS |
+| **Backend** | Python · FastAPI · REST APIs |
+| **Data Processing** | Pandas · NumPy · OpenPyXL · PyMuPDF · PaddleOCR |
+| **NLP & Information Extraction** | Hugging Face Transformers · spaCy · LLMs |
+| **Semantic Matching** | Sentence Transformers · FAISS / pgvector · Scikit-learn |
+| **Decision & Review** | Confidence Scoring · Rule Engine · Human-in-the-Loop |
+| **Database** | PostgreSQL |
+| **Security** | Keycloak · OAuth 2.0 · OpenID Connect · RBAC · JWT |
+| **Schedule Integration** | Primavera P6 · XER / XML / API · Microsoft Project |
+| **Analytics & Project Memory** | Recharts / Apache ECharts · Pandas · NumPy |
+| **Async Processing** | Celery · Redis |
+| **Deployment** | Docker · Linux · Nginx |
+| **Monitoring** | Prometheus · Grafana |
+| **Logging & Audit** | OpenSearch / ELK · PostgreSQL Audit Logs |
+
+### Architecture Principle
+
+```text
+Field Data → Processing → AI Extraction → Semantic Matching → Confidence & Review → Schedule Integration → Analytics & Project Memory
+```
+
+> **Designed as a production-ready architecture for scalable, secure, and auditable field-to-schedule intelligence.**
+
+### Key Differentiators
+- Field-to-schedule intelligence
+- L5/L6-level activity linking
+- Semantic understanding of different field terminology
+- Confidence-based decision making
+- Human verification for uncertain cases
+- Granularity mismatch handling
+- Unmatched/new activity detection
+- Auditable progress updates
+- Historical execution memory
+AI for speed. Human review for reliability.
+
+🖥️ Prototype Modules
+Module	Purpose
+Overview	Project progress and operational summary
+Data Ingestion	Field data and report intake
+Activity Linking	Field-to-L5/L6 activity mapping
+Planner Review	Validation of uncertain matches
+Schedule	Planned and actual activity tracking
+AI Time Agent	Conversational progress and event capture
+Delay & Risk	Execution and delay insights
+Institutional Memory	Historical execution knowledge
+Audit Trail	Traceable schedule changes
+Reports	Project progress and analytical views
+
+🎯 **Prototype Scope**
+The current prototype is designed for concept validation and **SIH** demonstration.
+It demonstrates:
+- Field data ingestion
+- Activity and event extraction
+- L5/L6 activity linking
+- Confidence-based matching
+- Planner validation
+- Schedule progress tracking
+- Auditability
+- Delay and risk visualization
+- Institutional project memory
+The prototype uses synthetic/sample project data to demonstrate the proposed workflow.
+Production-scale **OCR**, speech recognition, enterprise integrations, and large-scale deployment are considered future extensions.
+
+🏗️ **Solution Workflow**
+
+### Field Reports / Updates
+
+↓
+
+### Data Extraction
+
+↓
+
+### Activity & Event Identification
+
+↓
+
+### Semantic + Contextual Matching
+
+↓
+
+### L5/L6 Candidate Activities
+
+↓
+
+### Confidence Assessment
+
+↓
+
+### Planner Review
+
+↓
+
+### Verified Schedule Update
+
+↓
+
+### Analytics + Audit Trail + Project Memory
+
+🎯 **Project Vision**
+**PROGRESSLINK** AI aims to reduce the gap between project planning and field execution by transforming fragmented execution information into structured, reviewable, and schedule-linked progress data.
+From Field Reports → to Verified Progress → to Better Project Decisions.
+
+📌 **SIH** **2026** Problem Statement: **SIH26122** Title: Intelligent Data Capture & Schedule-Linking Layer for Infrastructure Project Management: Real-Time Actual Progress Tracking (Planning-to-Execution Bridge) Organization: Oil India Limited Category: Software Theme: Smart Automation 👥 Team **PROGRESSLINK** AI Smart India Hackathon **2026**
